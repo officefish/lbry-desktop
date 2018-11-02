@@ -67,6 +67,7 @@ class TransactionList extends React.PureComponent<Props> {
   render() {
     const { emptyMessage, rewards, transactions, slim, filterSetting } = this.props;
     const transactionList = transactions.filter(this.filterTransaction);
+
     // Flow offers little support for Object.values() typing.
     // https://github.com/facebook/flow/issues/2221
     // $FlowFixMe
